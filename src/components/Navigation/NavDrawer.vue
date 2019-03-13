@@ -8,19 +8,19 @@
     :value="displayingSiteNavigation"
   >
     <v-list>
-      <v-list-tile @click="route('home')">
+      <v-list-tile @click="route('Home')">
         <v-list-tile-content>
           <v-list-tile-title>Home</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
 
-      <v-list-tile @click="route('version')">
+      <v-list-tile @click="route('Version Control')">
         <v-list-tile-content>
           <v-list-tile-title>Version Control</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
 
-      <v-list-tile @click="route('cheat')">
+      <v-list-tile @click="route('Cheat-Sheet')">
         <v-list-tile-content>
           <v-list-tile-title>Cheat Sheet</v-list-tile-title>
         </v-list-tile-content>
@@ -39,12 +39,12 @@ export default {
   },
   methods: {
     route (path) {
-      if(path === 'home') {
-        this.$store.commit('setPath', 'home')
-      } else if(path === 'version') {
-        this.$store.commit('setPath', 'version')
+      if(path === 'Home') {
+        this.$store.commit('setPath', 'Home')
+      } else if(path === 'Version Control') {
+        this.$store.commit('setPath', 'Version Control')
       } else {
-        this.$store.commit('setPath', 'cheat')
+        this.$store.commit('setPath', 'Cheat-Sheet')
       }
       this.$store.commit('toggleNavigationDisplay')
     }

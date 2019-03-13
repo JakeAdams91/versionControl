@@ -5,7 +5,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     NavigationDisplay: false,
-    path: 'home',
+    path: 'Home',
     cheatSheet: [
       {category: "Need to Know", purpose: "Stage your recent changes", example: "git add ."},
       {category: "Need to Know", purpose: "Commit changes with a message", example: "git commit -m \"message goes here\""},

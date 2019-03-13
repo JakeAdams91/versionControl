@@ -4,9 +4,9 @@
     </toolbar>
     <nav-drawer />
     <v-content id="content">
-      <home v-if="getPath === 'home'"/>
-      <cheat-sheet v-if="getPath === 'cheat'"/>
-      <version-control v-if="getPath === 'version'"/>
+      <home v-if="getPath === 'Home'"/>
+      <cheat-sheet v-if="getPath === 'Cheat-Sheet'"/>
+      <version-control v-if="getPath === 'Version Control'"/>
     </v-content>
   </v-app>
 </template>
