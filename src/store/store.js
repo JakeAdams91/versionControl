@@ -8,7 +8,7 @@ export default new Vuex.Store({
     path: 'Home',
     cheatSheet: [
       {category: "Need to Know", purpose: "Stage your recent changes", example: "git add ."},
-      {category: "Need to Know", purpose: "Commit changes with a message", example: "git commit -m \"message goes here\""},
+      {category: "Need to Know", purpose: "Commit changes with a message", example: "git commit -m \"<message>\""},
       {category: "Need to Know", purpose: "Push your commit/changes", example: "git push"},
       {category: "Need to Know", purpose: "Update branch with latest changes", example: "git pull"},
       {category: "Need to Know", purpose: "Revert to most recent commit", example: "git reset --hard"},
@@ -45,7 +45,7 @@ export default new Vuex.Store({
       {category: "Undo", purpose: "Discard all local changes", example: "git reset --hard"},
       {category: "Undo", purpose: "discard local changes in a specific file", example: "git checkout HEAD <file>"},
       {category: "Undo", purpose: "Revert a commit with a new commit", example: "git revert <commit>"},
-      {category: "Undo", purpose: "Reset your HEAD t oa previous commit and discard all changes since", example: "git reset --hard <commit>"}
+      {category: "Undo", purpose: "Reset your HEAD to a previous commit and discard all changes since", example: "git reset --hard <commit>"}
   ]
   },
   getters: {

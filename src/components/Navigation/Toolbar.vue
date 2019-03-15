@@ -6,9 +6,11 @@
     color="success"
   >
     <v-toolbar-side-icon @click="toggleNavigationDisplay"></v-toolbar-side-icon>
+    <v-img max-width="110px" max-height="46px" :src="require('@/assets/logo.png')"></v-img>
+    <v-spacer />
     <v-toolbar-title>{{ path }}</v-toolbar-title>
     <v-spacer />
-    <v-toolbar-title>Jake Adams</v-toolbar-title>
+    <v-toolbar-title class="caption font-weight-bold mt-4">Jake Adams</v-toolbar-title>
   </v-toolbar>
 </template>
 
@@ -26,9 +28,9 @@ export default {
     },
     path () {
       if(this.getPath === 'Home') {
-        return 'Git: A guide to Version Control Software'
+        return 'An intro to Version Control Software'
       } else {
-        return 'Git: ' + this.getPath
+        return this.getPath
       }
     }
   }
