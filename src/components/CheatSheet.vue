@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p class="title">Git Cheat Sheet</p>
     <v-container grid-list-md>
       <v-layout>
         <v-flex md3 sm6 xs12 v-for="(column, i) in gridColumns" :key="i">
