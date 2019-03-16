@@ -6,9 +6,11 @@
     color="success"
   >
     <v-toolbar-side-icon @click="toggleNavigationDisplay"></v-toolbar-side-icon>
-    <v-toolbar-title>Git: Version Control</v-toolbar-title>
+    <v-img max-width="110px" max-height="46px" :src="require('@/assets/logo.png')"></v-img>
     <v-spacer />
-    <v-toolbar-title>Jake Adams</v-toolbar-title>
+    <v-toolbar-title>{{ path }}</v-toolbar-title>
+    <v-spacer />
+    <v-toolbar-title class="caption font-weight-bold mt-4">Jake Adams</v-toolbar-title>
   </v-toolbar>
 </template>
 
@@ -18,6 +20,18 @@ export default {
   methods: {
     toggleNavigationDisplay () {
       this.$store.commit('toggleNavigationDisplay')
+    }
+  },
+  computed: {
+    getPath () {
+      return this.$store.getters.getPath
+    },
+    path () {
+      if(this.getPath === 'Home') {
+        return 'An intro to Version Control Software'
+      } else {
+        return this.getPath
+      }
     }
   }
 }

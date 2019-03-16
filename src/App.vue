@@ -1,12 +1,12 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <toolbar>
     </toolbar>
     <nav-drawer />
     <v-content id="content">
-      <home v-if="getPath === 'home'"/>
-      <cheat-sheet v-if="getPath === 'cheat'"/>
-      <version-control v-if="getPath === 'version'"/>
+      <home v-if="getPath === 'Home'"/>
+      <cheat-sheet v-if="getPath === 'Cheat-Sheet'"/>
+      <version-control v-if="getPath === 'Version Control'"/>
     </v-content>
   </v-app>
 </template>
@@ -35,4 +35,8 @@ export default {
 </script>
 
 <style>
+  #app {
+    /* background-color: #E0E0E0; */
+    background-color: #757575;
+  }
 </style>
