@@ -147,8 +147,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
   .command {
     color: #FF5722;
     font-weight: bold;  

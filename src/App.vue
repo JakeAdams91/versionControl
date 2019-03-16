@@ -6,7 +6,7 @@
     <v-content id="content">
       <home v-if="getPath === 'Home'"/>
       <cheat-sheet v-if="getPath === 'Cheat-Sheet'"/>
-      <version-control v-if="getPath === 'Version Control'"/>
+      <version-control v-if="getPath === 'Installation Guide'"/>
     </v-content>
   </v-app>
 </template>

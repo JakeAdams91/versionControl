@@ -5,12 +5,12 @@
         {{ cheat.category }}
       </v-card-title>
       <v-divider dark/>
-      <v-layout row>
+      <v-layout row @click="show = !show">
         <v-flex xs10>
           <v-card-title class="white--text font-weight-bold">{{ cheat.example }}</v-card-title>
         </v-flex>
         <v-flex xs2 class="mr-3">
-          <v-btn icon @click="show = !show">
+          <v-btn icon >
             <v-icon class="white--text">{{ show ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}</v-icon>
           </v-btn>
         </v-flex>
