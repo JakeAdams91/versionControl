@@ -82,7 +82,7 @@
             <v-divider dark />
           <v-card-text class="white--text">
             <v-btn
-              @click="route('Home')"
+              @click="route('Cheat-Sheet')"
               color="success"
               flat
               class="ma-0">
