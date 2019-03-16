@@ -25,7 +25,7 @@
           <v-divider dark />
           <v-card-text class="white--text">
             I use Cmder Command Prompt tool for all things git and more. Cmder brings Linux style commands to the Windows platform;
-            lets be honest, Windows Command Prompt is just a terrible, terrible thing. That said this git installation process will be covered with the assumption 
+            lets be honest, Windows Command Prompt is just a terrible, terrible thing. That said this git installation process will be covered with the assumption
             that you use either Cmder.exe or any other good Console Emulator for Windows (if you have Linux then ignore this)
             <a href="https://cmder.net/" target="_blank"> Cmder.exe can be found here</a>
           </v-card-text>
@@ -82,7 +82,7 @@
             <v-divider dark />
           <v-card-text class="white--text">
             <v-btn
-              @click="route('Home')"
+              @click="route('Cheat-Sheet')"
               color="success"
               flat
               class="ma-0">
@@ -100,8 +100,8 @@ export default {
   name: 'VersionControl',
   methods: {
     route (path) {
-      if(path === 'Home') {
-      this.$store.commit('setPath', 'Home')
+      if (path === 'Home') {
+        this.$store.commit('setPath', 'Home')
       } else {
         this.$store.commit('setPath', 'Cheat-Sheet')
       }
